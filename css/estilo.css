@@ -1,0 +1,1576 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Playfair+Display:ital,wght@1,400;1,500;1,700;1,800;1,900&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif;  400 500 700 900
+   font-family: 'Playfair Display', serif;  400 500 700 800 900 */
+*{
+	padding: 0;
+	margin: 0;
+}
+/*ANIMACIONES*//*----------------------------------------------------------*/
+@keyframes bienvenidos {
+	0%{
+		background-image: url(../media/logoindex/barra.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	5%{
+		background-image: url(../media/logoindex/blanco.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	10%{
+		background-image: url(../media/logoindex/barra.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	15%{
+		background-image: url(../media/logoindex/blanco.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	20%{
+		background-image: url(../media/logoindex/b.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	25%{
+		background-image: url(../media/logoindex/bi.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	30%{
+		background-image: url(../media/logoindex/bie.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	35%{
+		background-image: url(../media/logoindex/bien.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	40%{
+		background-image: url(../media/logoindex/bienv.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	45%{
+		background-image: url(../media/logoindex/bienve.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	50%{
+		background-image: url(../media/logoindex/bienven.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	53%{
+		background-image: url(../media/logoindex/bienveni.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	55%{
+		background-image: url(../media/logoindex/bienvenid.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	58%{
+		background-image: url(../media/logoindex/bienvenido.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	60%{
+		background-image: url(../media/logoindex/bienvenidos.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	65%{
+		background-image: url(../media/logoindex/bienvenidosb.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	70%{
+		background-image: url(../media/logoindex/bienvenidos.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	75%{
+		background-image: url(../media/logoindex/bienvenidosb.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	80%{
+		background-image: url(../media/logoindex/bienvenidos.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	85%{
+		background-image: url(../media/logoindex/bienvenidosb.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	90%{
+		background-image: url(../media/logoindex/blanco.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	100%{
+		background-image: url(../media/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+@keyframes pedido{
+	0%{
+		background-image: url(../media/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	100%{
+		background-image: url(../media/logoPedido/azul.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+@keyframes productos{
+	0%{
+		background-image: url(../media/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	100%{
+		background-image: url(../media/logoproductos/naranja.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+@keyframes contacto{
+	0%{
+		background-image: url(../media/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	100%{
+		background-image: url(../media/logocontacto/verde.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+@keyframes zona{
+	0%{
+		background-image: url(../media/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	100%{
+		background-image: url(../media/logozona/violeta.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@keyframes respira{
+	0%{
+		color: white;
+	}
+	25%{
+		color: #ffe600;
+		text-shadow: 2px 2px 3px rgb(0, 0, 0);
+	}
+	50%{
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.822);
+	}
+	75%{
+		text-shadow: 2px 2px 3px rgb(0, 0, 0);
+	}
+	100%{
+		color: white;
+	}
+}
+/*GENERAL*//*-------------------------------------------*/
+#headerCelular{
+	display: none;
+	grid-area: header;
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+}
+#headerCelular .icono{
+    display: block !important;
+    color: #1d1d1d;
+	font-size: 1.5rem;
+}
+#headerCelular .botoneraCelular{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "uno dos tres cuatro cinco";
+}
+#headerCelular .botoneraCelular a{
+    text-align: center;
+    color: #1d1d1d;
+}
+#headerCelular .botoneraCelular a:active {
+    color: orangered;
+    text-decoration: none;
+}
+#headerCelular .botoneraCelular a:focus {
+    text-decoration: none;
+}
+#headerCelular .botoneraCelular .uno{
+    grid-area: uno;
+}
+#headerCelular .botoneraCelular .dos{
+    grid-area: dos;
+}
+#headerCelular .botoneraCelular .tres{
+    grid-area: tres;
+}
+#headerCelular .botoneraCelular .cuatro{
+    grid-area: cuatro;
+}
+#HeaderCheaderCelularelular .botoneraCelular .cinco{
+    grid-area: cuatro;
+}
+#headerCelular .espacio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bg-blanco{
+	background-color: white;
+}
+.navbar-toggler-icon-ce {
+    display: inline-block;
+    width: 6rem;
+    height: 1.5em;
+    background-image: url(../media/imgcelular/menu.png);
+    background-repeat: no-repeat;
+	background-position: center;
+}
+.navbar-toggler:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.navbar{
+	border-bottom: 1px solid #1d1d1d;
+}
+#headerGeneral{
+	grid-area: header;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #1d1d1d;
+	padding: 0 1rem;
+}
+#headerGeneral .logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 70px;
+	background-image: url(../media/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .logo a{
+	padding: 70px 110px;
+}
+#headerGeneral .botonera{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+}
+#headerGeneral .botonera a{
+	color: #1d1d1d;
+	padding: 5px 13px;
+}
+#headerGeneral .headerRedes{
+	background-color: #1d1d1d;
+	padding: .75rem 1.5rem;
+}
+#headerGeneral .headerRedes a{
+	color: white;
+	padding: 0 .5rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	transition: color 500ms, background 1s;
+	transition-timing-function: ease-in-out;
+}
+.tituloHeader{
+	color: rgb(248, 248, 248);
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.877);
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+	font-size: 4rem;
+}
+a{
+	text-decoration: none
+}
+a:hover {
+	text-decoration: none !important;
+}
+ul{
+	list-style: circle;
+	list-style-position: inside;
+}
+ul li a{
+	font-family: 'Noto Sans JP', sans-serif;
+	color: white;
+}
+.pointer{
+	cursor: pointer;
+}
+#headerGeneral .headerRedes .facebook:hover {
+	color: transparent;
+	background-image: url(../media/logoredes/facebook.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .headerRedes .instagram:hover {
+	color: transparent;
+	background-image: url(../media/logoredes/instagram.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .headerRedes .tiktok:hover {
+	color: transparent;
+	background-image: url(../media/logoredes/tiktok.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media all and (max-width: 768px){
+	#headerGeneral .headerRedes{
+		display: none;
+	}
+}
+
+@media all and (max-width: 480px){
+	#headerGeneral{
+		display: none;
+	}
+	#headerCelular{
+		display: initial;
+		box-sizing: border-box;
+	}
+	.tituloHeader{
+		font-size: 2.5rem;
+		margin-top: 4rem;
+	}
+}
+/*INICIO*//*--------------------------------------------------------------------------------------------*/
+#contenedorInicio{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 300px auto auto auto;
+	grid-template-areas:
+	"header"
+	"banner"
+	"text"
+	"sec1"
+	"sec2";
+}
+.leftBorder{
+	border-left: 1px solid #1d1d1d;
+}
+#banner{
+	grid-area: banner;
+	background-image: url(../media/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 3px 3px #000000b7;
+	z-index: 100;
+}
+#banner h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 3em;
+	padding: 15px;
+	text-shadow: 3px 3px 2px rgb(0, 0, 0);
+	color: rgb(248, 248, 248);
+}
+.indexText{
+	grid-area: text;
+	font-family: 'Noto Sans JP', sans-serif;
+  	font-weight: 400;
+  	font-style: italic;
+  	color: #ffffff;
+  	font-size: 1.3em;
+	background-color: #1d1d1d;
+	text-align: center;
+	padding: 3rem 2rem;
+	box-shadow: inset 0px -3px 3px #000000b7;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.774);
+}
+#section1{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"uno dos tres cuatro";
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #1d1d1d;
+	text-align: center;
+	padding: 1em 2em;
+	box-shadow: 0px 3px 3px #000000b7;
+	z-index: 50;
+}
+#section1 i{
+	font-size: 5em;
+	text-shadow: 2px 2px 2px black;	
+}
+#section1 .sec1{
+	grid-area: uno;
+	padding: 2em;
+}
+#section1 .sec2{
+	grid-area: dos;
+	padding: 2em;
+}
+#section1 .sec3{
+	grid-area: tres;
+	padding: 2em;
+}
+#section1 .sec4{
+	grid-area: cuatro;
+	padding: 2em;
+}
+#section1 h3{
+	font-size: 1.5em;
+}
+#section1 p{
+	margin-top: 1em;
+}
+#section2{
+	grid-area: sec2;
+	background-color: #1d1d1d;
+	border-top: 2px solid rgb(31, 31, 31);
+	color: #fff;
+	padding: 1em 1em 2em 4em;
+}
+#section2 h3{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-bottom: 0.33333em;
+	text-shadow: 1px 1px 5px black;
+}
+#section2 ul{
+	list-style: circle;
+	list-style-position: inside;
+}
+#section2 ul li{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+}
+#headerGeneral .logo.animacionIndex{
+	animation-name: bienvenidos;
+	animation-iteration-count: 1;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+}
+
+@media all and (max-width: 768px) {
+	#section1{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+		"uno dos" 
+		"tres cuatro";
+		font-family: 'Noto Sans JP', sans-serif;
+		color: #1d1d1d;
+		text-align: center;
+		padding: 1em 2em;
+		box-shadow: 0px 3px 3px #000000b7;
+		z-index: 50;
+	}
+	#section1 .sec3{
+		border: none;
+	}
+}
+@media all and (max-width: 480px){
+	#section1{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+		"uno"
+		"dos" 
+		"tres"
+		"cuatro";
+	}
+	#section1 i{
+		font-size: 4rem;
+	}
+	#section1 .sec3, .sec1, .sec2, .sec4{
+		border: none;
+	}
+	#contenedorInicio{
+		grid-template-rows: auto 300px auto auto auto;
+	}
+	#banner{
+		grid-area: banner;
+		background-image: url(../media/imgcelular/banner.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 300px;
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		box-shadow: 0px 3px 3px #000000b7;
+		z-index: 100;
+	}
+	#banner h2{
+		font-size: 1.5rem;
+	}
+	.indexText{
+		font-weight: 400;
+		color: #ffffff;
+		font-size: 1rem;
+		background-color: #1d1d1d;
+		text-align: center;
+		padding: 3rem 2rem;
+		box-shadow: inset 0px -3px 3px #000000b7;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.774);
+	}
+	#section2{
+		padding: 0.5rem .5rem .5rem 1.5rem;
+	}
+	#section1 .sec1{
+		padding: 1rem;
+	}
+	#section1 .sec2{
+		padding: 1rem;
+	}
+	#section1 .sec3{
+		padding: 1rem;
+	}
+	#section1 .sec4{
+		padding: 1rem;
+	}
+	#section2 ul li{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		font-size: .9rem;
+	}
+}
+/*HACE TU PEDIDO*//*----------------------------------------------------------------------------------------*/
+#contenedorPedido{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 300px auto;
+	grid-template-areas:
+	"header"
+	"banner"
+	"form";
+	padding-bottom: 2rem;
+}
+#headerGeneral .logoPedido{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 70px;
+	background-image: url(../media/logoPedido/azul.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .logoPedido a{
+	padding: 70px 110px;
+}
+.azul:hover {
+	color: #001C7A !important;
+	transition: all 500ms ease-in-out;
+}
+.azulActivo{
+	color: #001C7A !important;
+}
+#bannerPedido{
+	grid-area: banner;
+	background-image: url(../media/pedido.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 3px 3px #484848;
+}
+#formularioPedido{
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 2rem 5rem;
+}
+i{
+	font-size: 3rem;
+}
+.formText{
+	padding: 2rem 0 2rem 2rem;
+}
+.btn-link-ce-uno {
+	color: rgb(235, 235, 235);
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+}
+.btn-link-ce-dos {
+	color: rgb(235, 235, 235);
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+}
+.btn-link-ce-tres {
+	color: rgb(235, 235, 235);
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+}
+.btn-link-ce-uno:hover {
+	color: rgb(220, 223, 37);
+}
+.btn-link-ce-uno:focus {
+	color: rgb(220, 223, 37) !important;
+}
+.btn-link-ce-dos:hover {
+	color: rgb(221, 44, 141);
+}
+.btn-link-ce-dos:focus {
+	color: rgb(221, 44, 141) !important;
+}
+.btn-link-ce-tres:hover {
+	color: rgb(44, 166, 214);
+}
+.btn-link-ce-tres:focus {
+	color: rgb(44, 166, 214) !important;
+}
+.card-header-ce{
+	background-color: rgb(43, 43, 43);
+	border: 2px solid rgba(0, 0, 0, 0.527);
+	border-radius: 5px;
+}
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.card-body-ce-uno{
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+	background-color: rgba(220, 223, 37, 0.5);
+}
+.card-body-ce-dos{
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+	background-color: rgba(221, 44, 141, 0.5);
+}
+.card-body-ce-tres{
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+	background-color: rgba(44, 166, 214, 0.5);
+}
+.formUno{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.formUno .box{
+	margin-bottom: .7rem;
+	padding: .25rem 1rem .25rem .25rem;
+}
+.formUno .box:focus {
+	background-color: rgba(220, 223, 37, 0.5);
+	border: 2px solid rgb(220, 223, 37);
+	box-shadow: 0px 5px 3px rgba(56, 56, 56, 0.712);
+	transition: all 800ms ease-in-out;
+}
+.formDos{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.formDos h4{
+	color: rgb(221, 44, 141);
+}
+.formDos .box{
+	margin: .7rem 0;
+	padding: .25rem 1rem .25rem .25rem;
+}
+.formDos .box:focus {
+	background-color: rgba(221, 44, 141, 0.5);
+	border: 2px solid rgb(221, 44, 141);
+	box-shadow: 0px 5px 3px rgba(56, 56, 56, 0.712);
+	transition: all 800ms ease-in-out;
+}
+.formTres{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.formTres h4{
+	color: rgb(29, 108, 139);
+}
+.botonPedido{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	background-color: rgba(44, 166, 214, 0.5);
+	border-bottom: 2px solid rgb(44, 166, 214);
+}
+.botonPedido .boton{
+	background-color: rgb(44, 166, 214);
+	color: white;
+	font-weight: bold;
+	padding: .5rem 1rem;
+	border: 2px solid rgba(24, 24, 24, 0.87);
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.479);
+}
+.botonPedido .boton:hover {
+	transform: translateY(-3px);
+	box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.384);
+	transition: all 300ms ease-in-out;
+}
+.botonPedido .boton:active {
+	transform: translateY( 0px);
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.479);
+	transition: all 100ms ease-in-out;
+}
+#headerGeneral .logoPedido.animacionPedido{
+	animation-name: pedido;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+}
+
+@media all and (max-width: 480px){
+	#bannerPedido{
+		grid-area: banner;
+		background-image: url(../media/imgcelular/pedido.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 3px 3px #484848;
+	}
+	#contenedorPedido{
+		grid-template-rows: auto 300px auto;
+		grid-template-areas:
+		"header"
+		"banner"
+		"form";
+		padding-bottom: 2rem;
+	}
+	#formularioPedido{
+		margin: 1rem;
+	}
+	i{
+		font-size: 2rem;
+	}
+	.formText{
+		padding: 1rem;
+	}
+	h3{
+		font-size: 1rem;
+	}
+	.btn-link-ce-uno {
+		font-size: 1rem;
+	}
+	.btn-link-ce-dos {
+		font-size: 1rem;
+	}
+	.btn-link-ce-tres {
+		font-size: 1rem;
+	}
+	.card-body-ce-uno{
+		padding: .5rem;
+	}
+	.card-body-ce-dos{
+		padding: .5rem;
+	}
+	.card-body-ce-tres{
+		padding: .5rem;
+	}
+	.formUno .box{
+		margin-bottom: .5rem;
+		padding: .25rem;
+		width: 50%;
+		height: 75%;
+	}
+	.formDos .box{
+		margin: .7rem 0;
+		padding: .25rem;
+		width: 75%;
+	}
+}
+/*PRODUCTOS*//*---------------------------------------------------------------------------------------------*/
+#contenedorProductos{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 300px auto;
+	grid-template-areas:
+	"header"
+	"banner"
+	"productos";
+	padding-bottom: 2rem;
+}
+#headerGeneral .logoProductos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 70px;
+	background-image: url(../media/logoproductos/naranja.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .logoProductos a{
+	padding: 70px 110px;
+}
+.naranja:hover {
+	color: #DC7700 !important;
+	transition: all 500ms ease-in-out;
+}
+.naranjaActivo{
+	color: #DC7700 !important;
+}
+#bannerProductos{
+	grid-area: banner;
+	background-image: url(../media/productos.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 60%;
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 3px 3px #484848;
+}
+#bannerProductos p{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: rgb(238, 238, 238);
+	border-radius: 20px;
+	padding: .5em;
+	margin-top: 2rem;
+	margin-bottom: 3em;
+	font-size: 1.1em;
+	padding: 0.4rem .5rem;
+  	border-radius: 50px;
+  	background-color: #1d1d1dd0;
+}
+#productos{
+	grid-area: productos;
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: repeat(5, 400px);
+	grid-template-areas:
+	". img1 prod1 ."
+	". prod2 img2 ."
+	". img3 prod3 ."
+	". prod4 img4 ."
+	". img5 prod5 .";
+	padding-top: 2em;
+	font-family: 'Playfair Display', serif;
+}
+#productos .img1{
+	grid-area: img1;
+	transform: rotate(90deg);
+}
+#productos .prod1{
+	grid-area: prod1;
+}
+#productos .img2{
+	grid-area: img2;
+}
+#productos .prod2{
+	grid-area: prod2;
+}
+#productos .img3{
+	grid-area: img3;
+}
+#productos .prod3{
+	grid-area: prod3;
+}
+#productos .img4{
+	grid-area: img4;
+	transform: rotate(270deg);
+}
+#productos .prod4{
+	grid-area: prod4;
+}
+#productos .img5{
+	grid-area: img5;
+}
+#productos .prod5{
+	grid-area: prod5;
+}
+#productos img{
+	width: 350px;
+	height: 350px;
+}
+#productos h2{
+	text-shadow: 2px 2px #bababa;
+}
+#productos span{
+	font-weight: 900;
+	color: #ff8d00;
+	margin-right: 0.5em;
+	text-shadow: 1px 1px 15px black;
+}
+#productos .img1, .img2, .img3, .img4, .img5{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+#productos .prod1, .prod2, .prod3, .prod4, .prod5{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: .5rem;
+	background-color: #f5f5f5;
+}
+#productos .prod1, .prod3, .prod5{
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.808);
+	border-radius: 5px 0 0 0;
+}
+#productos .prod2, .prod4{
+	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.801);
+	border-radius: 0 5px 0 0;
+}
+#headerGeneral .logoProductos.animacionProductos{
+	animation-name: productos;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+}
+@media all and (max-width: 768px){
+	#productos{
+		grid-template-columns: auto;
+		grid-template-rows: repeat(10, auto);
+		grid-template-areas:
+		"prod1"
+		"img1"
+		"prod2"
+		"img2"
+		"prod3"
+		"img3"
+		"prod4"
+		"img4"
+		"prod5"
+		"img5";
+		padding-top: 2em;
+		font-family: 'Playfair Display', serif;
+	}
+	#productos .prod1, .prod2, .prod3, .prod4, .prod5{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		padding: .5rem;
+		background-color: #f5f5f5;
+		border-top: 3px solid #1d1d1dcc;
+	}
+}
+@media all and (max-width: 480px){
+	#contenedorProductos{
+		grid-template-rows: auto 300px auto;
+	}
+	#bannerProductos{
+		background-image: url(../media/imgcelular/productos.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#bannerProductos p{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		font-style: italic;
+		color: rgb(238, 238, 238);
+		border-radius: 20px;
+		font-size: 1rem;
+		margin: 1rem;
+	}
+	#productos img{
+		width: 150px;
+		height: 150px;
+		margin: 1rem 0;
+	}
+	#productos .prod1, .prod2, .prod3, .prod4, .prod5{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: flex-start;
+		padding: .5rem;
+		background-color: #f5f5f5;
+		border-top: none;
+		font-size: .75rem;
+		font-family: 'Noto Sans JP', sans-serif;
+		margin: 0 1rem;
+	}
+		
+}
+
+/*CONTACTO*//*----------------------------------------------------------------------------------------------*/
+#contenedorContacto{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 300px auto auto 200px;
+	grid-template-areas:
+	"header header"
+	"banner banner"
+	"form datos"
+	"form datos"
+	"mapa mapa";
+}
+#headerGeneral .logoContacto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 70px;
+	background-image: url(../media/logocontacto/verde.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .logoContacto a{
+	padding: 70px 110px;
+}
+.verde:hover {
+	color: #067304 !important;
+	transition: all 500ms ease-in-out;
+}
+.verdeActivo {
+	color: #067304 !important;
+}
+#bannerContacto{
+	grid-area: banner;
+	background-image: url(../media/contacto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
+	width: 100%;
+	box-shadow: 0px 3px 3px #484848;
+}
+#bannerContacto{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	z-index: 5;
+}
+#bannerContacto h1{
+	margin-top: 3rem;
+}
+#bannerContacto p{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: rgb(238, 238, 238);
+	border-radius: 20px;
+	padding: .5em;
+	margin-bottom: 3em;
+	font-size: 1.1em;
+	padding: 0.4rem .5rem;
+  	border-radius: 50px;
+  	background-color: #1d1d1dd0;
+}
+#formContacto{
+	grid-area: form;
+	margin: 1rem;
+}
+#formContacto h3{
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #067304;
+	margin-bottom: .75em;
+	text-shadow: 1px 1px black;
+}
+.formulario input{
+	display: block;
+	font-family: 'Noto Sans JP', sans-serif;
+	width: 100%;
+	border: 1px solid #067304;
+	box-sizing: border-box;
+	padding: 0.25em 1em;
+	margin-bottom: .5em;
+}
+input:focus {
+	outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+textarea{
+	width: 100%;
+	font-family: 'Noto Sans JP', sans-serif;
+	border: 1px solid #067304;
+	padding: 1em;
+	box-sizing: border-box;
+}
+textarea:focus {
+	outline: none;
+}
+.enviar{
+	cursor: pointer;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-style: italic;
+	letter-spacing: 1px;
+	padding: 0.5em 1em;
+	margin: 1em 4em 0 0;
+	color: white;
+	background-color: #067304;
+	border-radius: 10px;
+	border: 2px solid rgb(31, 95, 13);
+	float: right;
+}
+.enviar:hover {
+	transform: translateY(-3px);
+	box-shadow: 1px 3px 2px rgb(56, 56, 56);
+	transition: all 300ms ease-in-out;
+}
+.enviar:active {
+	transform: translateY(0px);
+	box-shadow: 1px 0px 1px rgb(27, 27, 27);
+	transition: all 100ms ease-in-out;
+}
+#datos{
+	grid-area: datos;
+	font-family: 'Noto Sans JP', sans-serif;
+	background-color: #067304;
+	color: white;
+	border-top: 2px solid #067304;
+	border-left: 2px solid rgb(32, 100, 13);
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"tel dir"
+	"mail red";
+	text-align: center;
+}
+#datos .telefono{
+	grid-area: tel;
+	text-shadow: 1px 1px 5px black;	
+}
+#datos .direccion{
+	grid-area: dir;
+	text-shadow: 1px 1px 5px black;
+}
+#datos .mail{
+	grid-area: mail;
+	text-shadow: 1px 1px 5px black;
+}
+#datos .redes{
+	grid-area: red;
+	text-shadow: 1px 1px 5px black;
+}
+.redes ul{
+	list-style: none;
+}
+#datos .icono{
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+}
+#mapa{
+	grid-area: mapa;
+	width: 100%;
+	filter: sepia(50%);
+	border-top: 2px solid #309b12;
+}
+#headerGeneral .logoContacto.animacionContacto{
+	animation-name: contacto;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+}
+
+@media all and (max-width: 768px) {
+	#contenedorContacto{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 70px 300px auto auto 200px;
+		grid-template-areas:
+		"header header"
+		"banner banner"
+		"form form"
+		"datos datos"
+		"mapa mapa";
+	}
+	#datos{
+		grid-area: datos;
+		font-family: 'Noto Sans JP', sans-serif;
+		background-color: #067304;
+		color: white;
+		border-top: 2px solid #067304;
+		border-left: 2px solid rgb(32, 100, 13);
+		padding: 1em;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"tel dir mail red";
+		text-align: center;
+	}
+	#mapa iframe{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 480px){
+	#contenedorContacto{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 300px auto auto auto;
+		grid-template-areas:
+		"header header"
+		"banner banner"
+		"form form"
+		"datos datos"
+		"mapa mapa";
+	}
+	#datos{
+		grid-area: datos;
+		font-family: 'Noto Sans JP', sans-serif;
+		background-color: #067304;
+		color: white;
+		border-top: 2px solid #067304;
+		border-left: 2px solid rgb(32, 100, 13);
+		padding: 0rem;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+		"tel"
+		"dir"
+		"mail"
+		"red";
+		text-align: center;
+		
+	}
+	#bannerContacto{
+		background-image: url(../media/imgcelular/contacto.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 300px;
+		width: 100%;
+	}
+	#bannerContacto p{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: rgb(238, 238, 238);
+		border-radius: 20px;
+		padding: .5em;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		padding: 0.4rem .5rem;
+		margin: 0 1rem;
+	}
+}
+
+
+/*ZONA DE ESTUDIOS*//*---------------------------------------------------------------------------------------*/
+#contenedorZona{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 70px 300px auto auto 200px 900px;
+	grid-template-areas:
+	"header"
+	"bannercanciones"
+	"texto"
+	"canciones"
+	"esp"
+	"meditacion";
+}
+#headerGeneral .logoZona{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 70px;
+	background-image: url(../media/logozona/violeta.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#headerGeneral .logoZona a{
+	padding: 70px 110px;
+}
+.violetaActivo{
+	color: #b9079c !important;
+}
+.violeta:hover {
+	color: #b9079c !important;
+	transition: all 500ms ease-in-out;
+}
+#bannercanciones{
+	grid-area: bannercanciones;
+	background-image: url(../media/bannerzona.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
+	width: 100%;
+	box-shadow: 0px 3px 3px #484848;
+	z-index: 10;
+}
+#bannerZona{
+	display: flex;
+	height: 300px;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+#bannerZona h1{
+	font-size: 5rem;
+}
+#texto{
+	grid-area: texto;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #1d1d1d;
+	text-align: center;
+	padding: .5rem 1rem;
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #dfdddb 100%);
+}
+#texto h2{
+	font-weight: bold;
+	font-size: 2rem;
+	padding: .75rem 0;
+}
+#texto a{
+	display: block;
+	width: 10rem;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.5rem;
+	color: #8b1878;
+	padding: 1rem;
+	border: 2px solid #8b1878;
+	background-color: #8b187850;
+	border-radius: 20px;
+	position: relative;
+	left: 42%;
+	top: 1rem;
+}
+#texto p{
+	font-size: 1.1rem;
+	padding-bottom: 1rem;
+}
+#canciones{
+	grid-area: canciones;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 2rem;
+	background-color: #dfdddb;
+}
+#canciones ul{
+	list-style: none;
+}
+#canciones ul li{
+	padding: .3em;
+	text-align: center;
+}
+#canciones ul li a{
+	color: #b31698;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px black;
+}
+#espacio {
+	padding-top: 5rem;
+	background-image: url(../media/zonaseparador.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 200px;
+	background-color: #dfdddb;
+}
+#meditacion{
+	grid-area: meditacion;
+	background-image: url(../media/meditacion.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: grid;
+	grid-template-columns: 2rem 1fr 2fr 1fr 2rem;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+	". texto texto texto ."
+	". vuno . vdos .";
+}
+#meditacion .respira{
+	grid-area: texto;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #1d1d1d;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 9rem;
+}
+#meditacion .respira h2{
+	font-weight: bold;
+	font-size: 2rem;
+	margin: .75rem 0;
+}
+#meditacion .respira p{
+	font-size: 1.1rem;
+}
+#meditacion .videoUno{
+	grid-area: vuno;
+}
+#meditacion .videoDos{
+	grid-area: vdos;
+}
+iframe{
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.781);
+}
+#headerGeneral .logoZona.animacionZona{
+	animation-name: zona;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+}
+
+@media all and (max-width: 768px) {
+	#meditacion .respira p{
+		font-size: 1rem;
+		background-color: rgba(245, 245, 245, 0.486);
+		border-radius: 10px;
+		border: 2px solid rgba(245, 245, 245, 0.726);
+	}
+
+	#canciones{
+		grid-area: canciones;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 2rem;
+		background-color: #dfdddb;
+	}
+
+	#texto a{
+		left: 37%;
+	}
+}
+@media all and (min-width: 500px){
+	.link{
+		display: none;
+	}
+}
+@media all and (max-width: 480px){
+	#contenedorZona{
+		grid-template-rows: auto 300px auto auto 200px 900px;
+	}
+	#bannercanciones{
+		grid-area: bannercanciones;
+		background-image: url(../media/imgcelular/zona.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 300px;
+		width: 100%;
+		box-shadow: 0px 3px 3px #484848;
+		z-index: 10;
+	}
+	#texto a{
+		left: 30%;
+	}
+	#canciones ul li a{
+		font-size: 1em;
+	}
+	#meditacion{
+		background-image: url(../media/meditacion.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+		"texto"
+		"vuno"
+		"vdos";
+	}
+	#meditacion .respira{
+		grid-area: texto;
+		font-family: 'Noto Sans JP', sans-serif;
+		color: #1d1d1d;
+		text-align: center;
+		box-sizing: border-box;
+		margin-top: 10rem;
+	}
+	#meditacion .respira h2{
+		font-weight: bold;
+		font-size: 2rem;
+		margin: .75rem 0;
+	}
+	#meditacion .respira p{
+		font-size: 1rem;
+		margin: 0 1rem;
+	}
+	#meditacion .videoUno{
+		grid-area: vuno;
+	}
+	#meditacion .videoDos{
+		grid-area: vdos;
+	}
+	.video{
+		display: none;
+	}
+	#meditacion a{
+		font-family: 'Playfair Display', serif;
+		font-weight: 500;
+		font-size: 1.2rem;
+		color: white;
+		display: block;
+		text-align: center;
+		animation-name: respira;
+		animation-iteration-count: infinite;
+		animation-delay: 0;
+		animation-duration: 4s;
+		animation-timing-function: ease-in-out;
+	}
+}
